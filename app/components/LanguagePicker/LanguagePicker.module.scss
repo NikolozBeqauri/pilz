@@ -1,0 +1,48 @@
+@use '../../_colors.scss' as *;
+.activeLanguage {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+}
+.wrapper {
+    position: relative;
+}
+.modalContainer {
+    width: 90px;
+    position: absolute;
+    top: 30px;
+    left: -8;
+}
+.activeFlag {
+    border-radius: 2px;
+}
+.downArrow {
+    margin-left: 4px;
+}
+.modalContainer {
+    display: flex;
+    flex-direction: column;
+    background: $white;
+    border: 1px solid $languageBorder;
+    border-radius: 12px;
+    padding: 4px 16px;
+}
+
+.modalContainer>div {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 0px;
+
+}
+
+.languageBottomBorder {
+    border-bottom: 1px solid $languageBorder;
+}
+
+.modalContainer > div > img {
+    border-radius: 2px;
+}
+

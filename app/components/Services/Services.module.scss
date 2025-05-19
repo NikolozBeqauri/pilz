@@ -1,0 +1,44 @@
+@use '../../_colors.scss' as *;
+
+.content {
+    border-bottom: 1px solid $borderGray;
+    padding: 120px 16px;
+    max-width: 1472px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.content h2 {
+    font-size: 40px;
+    line-height: 40px;
+    color: $primaryDark;
+    font-weight: 500;
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 456px);
+    row-gap: 48px;
+    column-gap: 36px;
+}
+.cardsContainer img {
+    border-radius: 12px;
+    height: 487px;
+}
+.cardsContainer h3 {
+    font-size: 24px;
+    line-height: 40px;
+    color: $primaryBlue;
+    font-weight: 600;
+    margin-top: 16px;
+}
+.cardsContainer p {
+    font-size: 16px;
+    line-height: 32px;
+    color: $primaryDark;
+    font-weight: 400;
+    margin-top: 6px;
+}

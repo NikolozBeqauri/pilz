@@ -1,0 +1,83 @@
+@use '../../_colors.scss' as *;
+.background {
+    position: relative;
+}
+.container {
+    max-width: 1472px;
+    width: 100%;
+    border-top: 1px solid $borderGray;
+    border-bottom: 1px solid $borderGray;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 120px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+.container h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 600;
+    color: $primaryDark;
+}
+
+.textsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.textsContainer>div>h3 {
+    color: $primaryBlue;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.textsContainer>div>p {
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 400;
+    color: $secondaryGray;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.generalInfo p:nth-child(1) {
+  color: $primaryBlue;
+}
+
+.generalInfo p:nth-child(3) {
+  color: $primaryDark;
+}
+
+.contactLeftLines {
+    position: absolute;
+    left: 0;
+    top: 15%;
+    width: 280px;
+    height: 650px;
+}
+.contactRightLines {
+    position: absolute;
+    right: 0;
+    top: -15%;
+    width: 280px;
+    height: 650px;
+}

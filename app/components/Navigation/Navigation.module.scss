@@ -1,0 +1,43 @@
+@use '../../_colors.scss' as *;
+
+.container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid $borderGray;
+    display: flex;
+    justify-content: center;
+    background: $white;
+    z-index: 4;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1472px;
+    width: 100%;
+    padding: 24px 16px;
+}
+
+.content nav {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.content nav ul {
+    display: flex;
+    gap: 40px;
+}
+.content nav ul li > a {
+    color: $secondaryGray;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.content nav ul li > a:hover {
+    color: $primaryBlue;
+}

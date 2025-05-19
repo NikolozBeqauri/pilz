@@ -1,0 +1,128 @@
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    margin: 0 auto;
+    gap: 62px;
+}
+
+.wrapper::before,
+.wrapper::after {
+    position: absolute;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.wrapper::before {
+    left: 0;
+    background: linear-gradient(90deg, white 0%, white 30%, rgba(255, 255, 255, 0.00) 65%);
+}
+
+.wrapper::after {
+    right: 0;
+    background: linear-gradient(270deg, white 0%, white 30%, rgba(255, 255, 255, 0) 65%);
+}
+
+.bankCardsWrapper {
+    display: flex;
+    align-items: center;
+    animation: slide 129s linear infinite;
+    will-change: transform;
+    gap: 62px;
+}
+
+.wrapper:hover .bankCardsWrapper {
+    animation-play-state: paused;
+}
+
+.bankCardItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.icon {
+    margin-left: 62px;
+    width: 62px;
+    height: 62px;
+}
+
+.bankCardItem p {
+    color: #000;
+    font-family: var(--font-noto-sans-georgian);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+
+    .wrapper::before,
+    .wrapper::after {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        margin-top: 40px;
+    }
+
+    .wrapper::before,
+    .wrapper::after {
+        width: 200px;
+    }
+
+    .wrapper::before {
+        background: linear-gradient(90deg, white 0%, white 40%, rgba(255, 255, 255, 0.00) 100%);
+    }
+
+    .wrapper::after {
+        background: linear-gradient(270deg, white 0%, white 40%, rgba(255, 255, 255, 0) 100%);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .wrapper::before,
+    .wrapper::after {
+        width: 100px;
+    }
+
+    .wrapper::before {
+        background: linear-gradient(90deg, white 0%, white 1%, rgba(255, 255, 255, 0.00) 100%);
+    }
+
+    .wrapper::after {
+        background: linear-gradient(270deg, white 0%, white 1%, rgba(255, 255, 255, 0) 100%);
+    }
+}
+
+
+@media (max-width: 464px) {
+    .bankCardItem img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .bankCardItem p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,45 @@
+@use '../../_colors.scss' as *;
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-family: var(--font-noto-sans-georgian);
+    font-weight: 600;
+    line-height: 40px;
+    font-size: 16px;
+    font-style: normal;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.blueButton {
+    background: $primaryBlue;
+    color: $white; 
+    transition: 0.3s;
+}
+
+.blueButton:hover {
+    background: #055E9F;
+}
+
+.blueButton:hover {
+    background: #077BCE;
+}
+
+.grayButton {
+    background: #F6F6F6;
+    color: #464C53; 
+    transition: 0.3s;
+}
+.grayButton:hover {
+    background: $borderGray;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
