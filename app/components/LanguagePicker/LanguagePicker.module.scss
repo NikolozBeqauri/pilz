@@ -46,3 +46,10 @@
     border-radius: 2px;
 }
 
+@media (max-width: 768px) {
+    .modalContainer {
+        position: relative;
+        top: 8px;
+        margin-bottom: 24px;
+    }
+}
