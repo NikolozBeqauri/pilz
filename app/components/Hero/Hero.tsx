@@ -31,6 +31,13 @@ const Hero = () => {
                         ყალიბებასა და ინვესტიციების მიზანმიმართულ მოზიდვაში — საერთაშ
                         ორისო სტანდარტების სრული დაცვით.
                     </p>
+                    <Image
+                        src="/heroMobile.png"
+                        alt="hero image"
+                        className={styles.heroMobile}
+                        width={343}
+                        height={229}
+                    />
                     <div className={styles.buttons}>
                         <div className={styles.joinUs}>
                             <ReusableButton title={'შემოგვიერთდი'} />
@@ -39,12 +46,21 @@ const Hero = () => {
                             <ReusableButton title={'გაიგე მეტი'} buttonColor='grayButton' />
                         </div>
                     </div>
+                
                 </div>
                 <Image
                     src="/heroDesktop.png"
                     alt="hero image"
+                    className={styles.heroImage}
                     width={630}
                     height={488}
+                />
+                <Image
+                    src="/heroLaptop.png"
+                    alt="hero image"
+                    className={styles.heroLaptop}
+                    width={336}
+                    height={357}
                 />
             </div>
         </section>
