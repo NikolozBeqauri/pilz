@@ -1,7 +1,9 @@
 @use '../../_colors.scss' as *;
+
 .background {
     position: relative;
 }
+
 .container {
     max-width: 1472px;
     width: 100%;
@@ -14,11 +16,14 @@
     flex-direction: column;
     gap: 40px;
 }
+
 .content {
     display: flex;
     justify-content: space-between;
     gap: 60px;
+    padding: 0px 32px;
 }
+
 .container h2 {
     font-size: 40px;
     line-height: 40px;
@@ -38,14 +43,20 @@
     gap: 16px;
 }
 
-.textsContainer>div>h3 {
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contacts>div>h3 {
     color: $primaryBlue;
     font-size: 32px;
     line-height: 40px;
     font-weight: 600;
 }
 
-.textsContainer>div>p {
+.contacts>div>p {
     font-size: 18px;
     line-height: 40px;
     font-weight: 400;
@@ -59,12 +70,20 @@
     margin-top: 16px;
 }
 
+.links {
+    min-width: 370px;
+}
+
+.generalInfo {
+    min-width: 230px;
+}
+
 .generalInfo p:nth-child(1) {
-  color: $primaryBlue;
+    color: $primaryBlue;
 }
 
 .generalInfo p:nth-child(3) {
-  color: $primaryDark;
+    color: $primaryDark;
 }
 
 .contactLeftLines {
@@ -74,10 +93,92 @@
     width: 280px;
     height: 650px;
 }
+
 .contactRightLines {
     position: absolute;
     right: 0;
     top: -15%;
     width: 280px;
     height: 650px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        gap: 16px;
+        align-items: center;
+    }
+
+    .container h2 {
+        font-size: 36px;
+        align-self: flex-start;
+    }
+
+    .textsContainer {
+        flex-direction: row;
+        max-width: 710px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .contacts>div>h3 {
+        font-size: 20px;
+    }
+
+    .contacts>div>p {
+        font-size: 16px;
+    }
+
+    .contacts {
+        gap: 16px;
+    }
+
+    .generalInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactLeftLines {
+        display: none;
+    }
+
+    .contactRightLines {
+        display: none;
+    }
+
+    .content {
+        padding: 0px;
+        gap: 24px;
+    }
+
+    .container h2 {
+        font-size: 24px;
+    }
+
+    .textsContainer {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .container h2 {
+        font-size: 24px;
+    }
+
+    .contacts>div>h3 {
+        font-size: 16px;
+    }
+
+    .contacts>div>p {
+        font-size: 14px;
+    }
+    .links {
+        min-width: 320px;
+    }
 }
