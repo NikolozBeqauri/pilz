@@ -67,8 +67,17 @@
     .cardsContainer img {
         max-width: 476px;
     }
+
     .content h2 {
         font-size: 36px;
+    }
+}
+
+@media (max-width:900px) {
+    .content {
+        padding: 48px 16px;
+        border-bottom: none;
+
     }
 }
 

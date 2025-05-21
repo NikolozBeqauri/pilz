@@ -6,7 +6,11 @@ import styles from "./LanguagePicker.module.scss";
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const LanguagePicker = () => {
+type Props = {
+  setActive?: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const LanguagePicker = (props: Props) => {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
@@ -16,10 +20,9 @@ const LanguagePicker = () => {
   const localeLabels: Record<string, string> = {
     ka: 'KA',
     en: 'ENG',
-    ru: 'RUS'
   };
 
-  const locales = ['ka', 'en', 'ru'];
+  const locales = ['ka', 'en'];
 
   const changeLanguage = (newLocale: string) => {
     const segments = pathname.split('/');
@@ -80,7 +83,11 @@ const LanguagePicker = () => {
                     index !== arr.length - 1
                       ? styles.languageBottomBorder
                       : undefined
-                  } onClick={() => changeLanguage(lang)}
+                  }
+                  onClick={() => {
+                    changeLanguage(lang);
+                    props.setActive?.(false);
+                  }}
                 >
                   <Image
                     src={`/${lang}.svg`}
