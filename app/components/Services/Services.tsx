@@ -33,7 +33,6 @@ const Services = () => {
             altText: "ბუღალტერი ცხრილებთან მუშაობს"
         },
     ];
-
     return (
         <section id='services' className={styles.container}>
             <div className={styles.content}>
