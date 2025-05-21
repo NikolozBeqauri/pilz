@@ -9,13 +9,8 @@ import Services from '../components/Services/Services';
 export default function HomePage() {
   return (
     <div>
-      <NavigationRender />
-      <Hero />
-      <Services />
-      <AboutSection />
-      <BankSlider />
+
       <ContactSection />
-      <FooterComponent />
     </div>
   );
 }

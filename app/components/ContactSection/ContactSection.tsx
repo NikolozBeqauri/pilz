@@ -19,34 +19,36 @@ const ContactSection = () => {
                 <h2>კონტაქტი</h2>
                 <div className={styles.content}>
                     <div className={styles.textsContainer}>
-                        <div className={styles.contact}>
-                            <h3>დაგვიკავშირდით</h3>
-                            <p>თქვენი უკუკავშირი ჩვენთვის ძალიან მნიშვნელოვანია</p>
-                        </div>
-                        <div className={styles.links}>
-                            <h3>გამოგვიწერე სოციალურ ქსელებში</h3>
-                            <div className={styles.icons}>
-                                <Image
-                                    src={'/BOG.svg'}
-                                    alt={'image'}
-                                    width={40}
-                                    height={40}
-                                    className={styles.icon}
-                                />
-                                <Image
-                                    src={'/BOG.svg'}
-                                    alt={'image'}
-                                    width={40}
-                                    height={40}
-                                    className={styles.icon}
-                                />
-                                <Image
-                                    src={'/BOG.svg'}
-                                    alt={'image'}
-                                    width={40}
-                                    height={40}
-                                    className={styles.icon}
-                                />
+                        <div className={styles.contacts}>
+                            <div className={styles.contact}>
+                                <h3>დაგვიკავშირდით</h3>
+                                <p>თქვენი უკუკავშირი ჩვენთვის ძალიან მნიშვნელოვანია</p>
+                            </div>
+                            <div className={styles.links}>
+                                <h3>გამოგვიწერე სოციალურ ქსელებში</h3>
+                                <div className={styles.icons}>
+                                    <Image
+                                        src={'/BOG.svg'}
+                                        alt={'image'}
+                                        width={40}
+                                        height={40}
+                                        className={styles.icon}
+                                    />
+                                    <Image
+                                        src={'/BOG.svg'}
+                                        alt={'image'}
+                                        width={40}
+                                        height={40}
+                                        className={styles.icon}
+                                    />
+                                    <Image
+                                        src={'/BOG.svg'}
+                                        alt={'image'}
+                                        width={40}
+                                        height={40}
+                                        className={styles.icon}
+                                    />
+                                </div>
                             </div>
                         </div>
                         <div className={styles.generalInfo}>

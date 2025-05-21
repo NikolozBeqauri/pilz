@@ -11,7 +11,6 @@ const BankSlider = () => {
         { src: "/TBC.svg", name: "TBC ბანკი" },
         { src: "/liberty.svg", name: "LIBERTY ბანკი" },
     ];
-
     return (
         <section className={styles.wrapper}>
             <div className={styles.bankCardsWrapper}>

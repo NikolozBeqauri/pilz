@@ -33,8 +33,9 @@
     font-weight: 500;
     color: $inputPlaceholder;
 }
+
 .form textarea {
-    resize:none;
+    resize: none;
     height: 220px;
 }
 
@@ -56,4 +57,21 @@
     font-size: 16px;
     font-weight: 500;
     margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+
+    .form input,
+    .form textarea {
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    .form button {
+        background: $primaryBlue;
+        padding: 16px 0px;
+        font-size: 16px;
+        width: 100%;
+        max-width: 100%;
+    }
 }
