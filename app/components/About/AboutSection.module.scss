@@ -11,32 +11,38 @@
     gap: 40px;
     margin-bottom: 150px;
 }
+
 .container h2 {
     font-size: 40px;
     line-height: 40px;
     font-weight: 500;
     color: $primaryDark;
 }
+
 .content {
     display: flex;
     justify-content: space-between;
     gap: 40px;
 }
-.content > div {
+
+.content>div {
     max-width: 710px;
     width: 100%;
 }
+
 .textsContainer {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
+
 .textsContainer p {
     font-size: 18px;
     line-height: 40px;
     font-weight: 400;
     color: $primaryDark;
 }
+
 .textsContainer p span {
     color: $primaryBlue;
 }
@@ -44,4 +50,58 @@
 .reverse {
     flex-direction: row-reverse;
     margin-top: 100px;
+}
+
+.aboutImage {
+    max-width: 650;
+    width: 100%;
+    max-height: 475px;
+    height: 100%;
+}
+
+@media (max-width: 1300px) {
+    .content {
+        gap: 0px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container > h2 {
+        font-size: 36px;
+    }
+    .content {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .textsContainer p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        gap: 24px;
+    }
+    .container h2 {
+        font-size: 24px;
+    }
+    .reverse {
+        margin-top: 0px;
+    }
+    .textsContainer p {
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container h2 {
+        font-size: 18px;
+    }
+    .textsContainer {
+        gap: 16px;
+    }
+    .textsContainer p {
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
