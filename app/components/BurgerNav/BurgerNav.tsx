@@ -37,7 +37,7 @@ const BurgerNav = () => {
                             </li>
                         </ul>
                         <div className={styles.languagePicker}>
-                            <LanguagePicker />
+                            <LanguagePicker setActive={setActive} />
                         </div>
                     </div>
                 </div>
