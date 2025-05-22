@@ -1,10 +1,11 @@
 'use client'
 import { useForm } from "react-hook-form";
 import styles from './GmailForm.module.scss';
+import emailjs from 'emailjs-com'; 
 
 type FormValues = {
     name: string;
-    gmail: string;
+    email: string;
     title: string;
     message: string;
 };
@@ -18,9 +19,20 @@ const GmailForm = () => {
     } = useForm<FormValues>({ mode: "onSubmit" });
 
     const onSubmit = (data: FormValues) => {
-        console.log("Form Data:", data);
-        reset();
-    };
+    emailjs.send(
+        'service_497ijx9',  
+        'template_xd7auha',     
+        data,
+        'AmdoW3hbTIJ5TaQKJ' 
+    )
+    .then((result) => {
+        console.log('Email successfully sent!', result.text);
+        reset(); 
+    })
+    .catch((error) => {
+        console.error('There was an error sending the email:', error.text);
+    });
+};
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
@@ -36,9 +48,9 @@ const GmailForm = () => {
                 <div>
                     <input
                         placeholder="ელ-ფოსტა"
-                        {...register("gmail", { required: "გთხოვთ შეიყვანოთ ელ-ფოსტა" })}
+                        {...register("email", { required: "გთხოვთ შეიყვანოთ ელ-ფოსტა" })}
                     />
-                    {errors.gmail && <p className={styles.error}>{errors.gmail.message}</p>}
+                    {errors.email && <p className={styles.error}>{errors.email.message}</p>}
                 </div>
 
                 <div>
