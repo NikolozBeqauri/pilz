@@ -40,7 +40,7 @@ const Services = () => {
                 <ul className={styles.cardsContainer}>
                     {services.map((service) => (
                         <li key={service.id}>
-                            <Link href={`/services/${service.id}`}>
+                            <Link href={`/service/${service.id}`}>
                                 <article>
                                     <Image
                                         src={service.image}
