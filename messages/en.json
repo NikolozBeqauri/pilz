@@ -25,5 +25,26 @@
     "bog": "Bank of Georgia",
     "tbc": "TBC Bank",
     "liberty": "Liberty Bank"
+  },
+  "Contact": {
+    "title": "Contact",
+    "contactUs": "Get in touch with us",
+    "contactUsText": "Your feedback is very important to us",
+    "socialTitle": "Follow us on social media",
+    "gmail": "info@pilz.com",
+    "location": "Tbilisi, Georgia",
+    "exactLocation": "26a Shalva Nutsubidze Street",
+    "number": "+995 577 77 77 77"
+  },
+  "Form": {
+    "name": "Full Name",
+    "gmail": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "send",
+    "nameError": "Please enter your first or last name",
+    "gmailError": "Please enter your email",
+    "subjectError": "Please enter a subject",
+    "messageError": "Please enter a message"
   }
 }
