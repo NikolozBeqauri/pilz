@@ -1,8 +1,11 @@
 import styles from './ContactSection.module.scss'
 import Image from "next/image";
 import GmailForm from './GmailForm/GmailForm';
+import { useTranslations } from "next-intl";
 
 const ContactSection = () => {
+    const t = useTranslations('Contact');
+
     return (
         <section id='contact' className={styles.background}>
             <img
@@ -16,16 +19,16 @@ const ContactSection = () => {
                 className={styles.contactRightLines}
             />
             <div className={styles.container}>
-                <h2>კონტაქტი</h2>
+                <h2>{t('title')}</h2>
                 <div className={styles.content}>
                     <div className={styles.textsContainer}>
                         <div className={styles.contacts}>
                             <div className={styles.contact}>
-                                <h3>დაგვიკავშირდით</h3>
-                                <p>თქვენი უკუკავშირი ჩვენთვის ძალიან მნიშვნელოვანია</p>
+                                <h3>{t('contactUs')}</h3>
+                                <p>{t('contactUsText')}</p>
                             </div>
                             <div className={styles.links}>
-                                <h3>გამოგვიწერე სოციალურ ქსელებში</h3>
+                                <h3>{t('socialTitle')}</h3>
                                 <div className={styles.icons}>
                                     <Image
                                         src={'/BOG.svg'}
@@ -52,10 +55,10 @@ const ContactSection = () => {
                             </div>
                         </div>
                         <div className={styles.generalInfo}>
-                            <p>info@pilz.com</p>
-                            <p>თბილისი, საქართველო</p>
-                            <p>შალვა ნუცუბიძის ქუჩა 26ა</p>
-                            <p>+995 577 77 77 77</p>
+                            <p>{t('gmail')}</p>
+                            <p>{t('location')}</p>
+                            <p>{t('exactLocation')}</p>
+                            <p>{t('number')}</p>
                         </div>
                     </div>
                     <GmailForm />

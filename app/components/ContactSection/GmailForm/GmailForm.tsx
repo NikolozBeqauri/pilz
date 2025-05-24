@@ -1,7 +1,8 @@
 'use client'
 import { useForm } from "react-hook-form";
 import styles from './GmailForm.module.scss';
-import emailjs from 'emailjs-com'; 
+import emailjs from 'emailjs-com';
+import { useTranslations } from "next-intl";
 
 type FormValues = {
     name: string;
@@ -18,53 +19,56 @@ const GmailForm = () => {
         formState: { errors }
     } = useForm<FormValues>({ mode: "onSubmit" });
 
+    const t = useTranslations('Form');
+
+
     const onSubmit = (data: FormValues) => {
-    emailjs.send(
-        'service_497ijx9',  
-        'template_xd7auha',     
-        data,
-        'AmdoW3hbTIJ5TaQKJ' 
-    )
-    .then((result) => {
-        console.log('Email successfully sent!', result.text);
-        reset(); 
-    })
-    .catch((error) => {
-        console.error('There was an error sending the email:', error.text);
-    });
-};
+        emailjs.send(
+            'service_497ijx9',
+            'template_xd7auha',
+            data,
+            'AmdoW3hbTIJ5TaQKJ'
+        )
+            .then((result) => {
+                console.log('Email successfully sent!', result.text);
+                reset();
+            })
+            .catch((error) => {
+                console.error('There was an error sending the email:', error.text);
+            });
+    };
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
             <div className={styles.inputs}>
                 <div>
                     <input
-                        placeholder="სახელი, გვარი"
-                        {...register("name", { required: "გთხოვთ შეიყვანოთ სახელი ან გვარი" })}
+                        placeholder={`${t('name')}`}
+                        {...register("name", { required: `${t('nameError')}` })}
                     />
                     {errors.name && <p className={styles.error}>{errors.name.message}</p>}
                 </div>
 
                 <div>
                     <input
-                        placeholder="ელ-ფოსტა"
-                        {...register("email", { required: "გთხოვთ შეიყვანოთ ელ-ფოსტა" })}
+                        placeholder={`${t('gmail')}`}
+                        {...register("email", { required: `${t('gmailError')}` })}
                     />
                     {errors.email && <p className={styles.error}>{errors.email.message}</p>}
                 </div>
 
                 <div>
                     <input
-                        placeholder="სათაური"
-                        {...register("title", { required: "გთხოვთ შეიყვანოთ სათაური" })}
+                        placeholder={`${t('subject')}`}
+                        {...register("title", { required: `${t('subjectError')}` })}
                     />
                     {errors.title && <p className={styles.error}>{errors.title.message}</p>}
                 </div>
 
                 <div>
                     <textarea
-                        placeholder="შეტყობინება"
-                        {...register("message", { required: "გთხოვთ შეიყვანოთ შეტყობინება" })}
+                        placeholder={`${t('message')}`}
+                        {...register("message", { required: `${t('messageError')}` })}
                     />
                     {errors.message && <p className={styles.error}>{errors.message.message}</p>}
                 </div>
