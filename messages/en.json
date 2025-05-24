@@ -4,6 +4,13 @@
     "aboutUs": "About Us",
     "contact": "Contact"
   },
+  "Hero": {
+    "title": "Reliable Accounting",
+    "secondaryTitle": "In Georgia and beyond.",
+    "bodyText": "Our team helps you not only with financial reporting and tax obligation management, but also with shaping future plans and attracting investments in a targeted manner — in full compliance with international standards.",
+    "joinUs": "Join us",
+    "more": "Learn more"
+  },
   "Service": {
     "title": "AboutUs",
     "pilz": "Pilz",

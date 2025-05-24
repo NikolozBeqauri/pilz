@@ -1,8 +1,11 @@
 import styles from './Hero.module.scss'
 import Image from 'next/image';
 import ReusableButton from '../ReusableButton/ReusableButton'
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
+    const t = useTranslations('Hero');
+
     return (
         <section className={styles.background}>
             <Image
@@ -22,14 +25,11 @@ const Hero = () => {
             <div className={styles.container}>
                 <div className={styles.contant}>
                     <h1>
-                        სანდო ბუღალტერია
-                        <p>საქართველოში და მის ფარგლებს გარეთ.</p>
+                        {t('title')}
+                        <p>{t('secondaryTitle')}</p>
                     </h1>
                     <p>
-                        ჩვენი გუნდი გეხმარებათ არა მხოლოდ ფინანსური აღრიცხვისა და საგადას
-                        ახადო ვალდებულებების მართვაში, არამედ სამომავლო გეგმების ჩამო
-                        ყალიბებასა და ინვესტიციების მიზანმიმართულ მოზიდვაში — საერთაშ
-                        ორისო სტანდარტების სრული დაცვით.
+                        {t('bodyText')}
                     </p>
                     <Image
                         src="/heroMobile.png"
@@ -40,13 +40,13 @@ const Hero = () => {
                     />
                     <div className={styles.buttons}>
                         <div className={styles.joinUs}>
-                            <ReusableButton title={'შემოგვიერთდი'} />
+                            <ReusableButton title={`${t('joinUs')}`} />
                         </div>
                         <div className={styles.more}>
-                            <ReusableButton title={'გაიგე მეტი'} buttonColor='grayButton' />
+                            <ReusableButton title={`${t('more')}`} buttonColor='grayButton' />
                         </div>
                     </div>
-                
+
                 </div>
                 <Image
                     src="/heroDesktop.png"
