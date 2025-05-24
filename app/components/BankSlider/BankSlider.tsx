@@ -1,15 +1,17 @@
 import styles from "./BankSlider.module.scss";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const BankSlider = () => {
+        const t = useTranslations('Slider');
     
     const banks = [
-        { src: "/BOG.svg", name: "საქართველოს ბანკი" },
-        { src: "/TBC.svg", name: "TBC ბანკი" },
-        { src: "/liberty.svg", name: "LIBERTY ბანკი" },
-        { src: "/BOG.svg", name: "საქართველოს ბანკი" },
-        { src: "/TBC.svg", name: "TBC ბანკი" },
-        { src: "/liberty.svg", name: "LIBERTY ბანკი" },
+        { src: "/BOG.svg", name: `${t('bog')}`},
+        { src: "/TBC.svg", name: `${t('tbc')}` },
+        { src: "/liberty.svg", name: `${t('liberty')}` },
+        { src: "/BOG.svg", name: `${t('bog')}` },
+        { src: "/TBC.svg", name: `${t('tbc')}` },
+        { src: "/liberty.svg", name: `${t('liberty')}` },
     ];
     return (
         <section className={styles.wrapper}>

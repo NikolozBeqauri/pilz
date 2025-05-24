@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useTranslations } from "next-intl";
 
 const AboutSection = () => {
-  const t = useTranslations('Service');
+  const t = useTranslations('AboutUs');
 
   return (
     <section id='aboutUs' className={styles.container}>

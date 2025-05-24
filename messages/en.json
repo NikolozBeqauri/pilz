@@ -11,7 +11,7 @@
     "joinUs": "Join us",
     "more": "Learn more"
   },
-  "Service": {
+  "AboutUs": {
     "title": "AboutUs",
     "pilz": "Pilz",
     "overview": "Pilz LTD provides accounting services in Georgia, both for Georgians and non-residents. Accounting is one of the main foundations of the financial success of any organization.",
@@ -20,5 +20,10 @@
     "structure": "Accounting services follow a certain logical sequence. Assets, liabilities, expenses, income, and equity components are classified and presented in financial reports in accordance with applicable accounting standards.",
     "professionalSupport": "Our highly qualified team of professional accountants will assist you with financial accounting, reporting, and timely fulfillment of tax obligations, allowing you to focus entirely on managing your business.",
     "insurance": "Our services are insured. We are responsible for tax or other financial losses caused by us, up to 100,000 GEL."
+  },
+  "Slider": {
+    "bog": "Bank of Georgia",
+    "tbc": "TBC Bank",
+    "liberty": "Liberty Bank"
   }
 }
