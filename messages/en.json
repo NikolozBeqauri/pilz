@@ -59,5 +59,103 @@
     "number": "+995 577 77 77 77",
     "location": "Tbilisi, Georgia",
     "copyRight": "Copyright © 2025 Pilz"
+  },
+  "Services": {
+    "title": "Services",
+    "service1": {
+      "title": "Accounting Services",
+      "description": "A professional team with many years of experience will provide you with accounting services in full compliance with international standards."
+    },
+    "service2": {
+      "title": "Tax Issues",
+      "description": "A professional and experienced team will protect your interests with the tax authorities."
+    },
+    "service3": {
+      "title": "Bookkeeping",
+      "description": "The bookkeeping service allows companies to simplify the accounting process."
+    },
+    "service4": {
+      "title": "Financial Management",
+      "description": "The main goal of financial management is to thoroughly assess financial data to analyze your business and outline a strategic direction."
+    },
+    "service5": {
+      "title": "AML-CFT",
+      "description": "Risk assessment related to anti-money laundering and countering the financing of terrorism."
+    },
+    "service6": {
+      "title": "Consultation",
+      "description": "Our qualified and professional team of consultants will explain tax and accounting matters in a simple and understandable way."
+    }
+  },
+  "FullServiceInfo": {
+    "title": "Services",
+    "secondaty": "Our services include:",
+    "1": {
+      "title": "Accounting Services",
+      "text": [
+        "Our team of professionals with many years of experience provides accounting services in full compliance with international standards. We continuously train and certify our accountants and financial specialists in both tax legislation and accounting standards."
+      ],
+      "list": [
+        "Consulting in accounting and tax activities;",
+        "Development of accounting policies;",
+        "Daily operations;",
+        "Creating an electronic database of documents;",
+        "Submitting tax declarations;",
+        "Data entry into accounting software;",
+        "Making bank transfers;",
+        "Income tax;",
+        "Value added tax (VAT);",
+        "Property tax;",
+        "Excise tax;",
+        "Adjusting accounting for previous periods;",
+        "Monthly financial reports for company management;",
+        "Annual financial statements, which include several stages: A statement of financial position or balance sheet, including assets and liabilities; Profit and loss or income statement, including revenues and expenses; Cash flow statement, including cash flows."
+      ]
+    },
+    "2": {
+      "title": "Tax Matters",
+      "text": [
+        "Our professional and experienced team, which undergoes regular training and certification, will check your company’s tax position and protect your interests with tax authorities. We provide representation and defend our clients’ interests in tax disputes (including legal analysis of assessments, complaint preparation, and representation at all stages of dispute resolution).",
+        "Support in the preliminary ruling process includes identifying the client's tax risks, preparing a letter requesting a preliminary ruling and protecting the client's interests during discussions with the Revenue Service.",
+        "We also help select the optimal tax regime based on the company’s goals. You can choose a service package tailored to your needs: oral and written tax consultations; control of the correctness of monthly tax declarations; support during tax audits; assistance in communication with tax authorities."
+      ],
+      "list": []
+    },
+    "3": {
+      "title": "Bookkeeping",
+      "text": [
+        "Our bookkeeping service allows companies to simplify the accounting process. We handle all accounting entries, while the chief accountant is only responsible for analyzing information and submitting tax declarations. As a result, we reduce the daily administrative workload of the chief accountant, relieving them from the 'heavy lifting'.",
+        "Our services include: Recording bank statements in accounting software; Full processing of all other transactions; Setup of internal control systems to ensure high-quality transactions; Electronic task management system."
+      ],
+      "list": []
+    },
+    "4": {
+      "title": "Financial Management",
+      "text": [
+        "The main goal of financial management is the detailed evaluation of financial data to study your business and gain a strategic overview, which enables us to reduce costs and increase the company’s profitability under existing resources. Through effective financial management, we perform a detailed cost analysis, control cash flow, analyze profitability, and structure and analyze the financial data of the business. This helps us make accurate and forward-looking revenue forecasts. Based on the analysis of this data, we prepare specific actionable recommendations aimed at increasing the financial profitability of the business."
+      ],
+      "list": []
+    },
+    "5": {
+      "title": "AML-CFT",
+      "text": [
+        "Assessment of risk level related to anti-money laundering and counter-financing of terrorism. The compliance officer will thoroughly verify the company, clients, beneficiaries, and the validity of fund flows, and issue appropriate recommendations."
+      ],
+      "list": []
+    },
+    "6": {
+      "title": "Consulting",
+      "text": [
+        "Our qualified and professional consulting team will explain accounting and tax issues in a clear and understandable way. At the early stage of business development, receiving accurate and relevant information is crucial for proper planning of business and operational processes.",
+        "Our services include: Financial and tax consultations; Consultation on maintaining primary documentation; Organization of business processes; Updates on changes in legislation; Recommendations."
+      ],
+      "list": [
+        "Financial and tax consultations;",
+        "Consultation on maintaining primary documentation;",
+        "Organization of business processes;",
+        "Updates on changes in legislation;",
+        "Recommendations;"
+      ]
+    }
   }
 }

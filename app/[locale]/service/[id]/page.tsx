@@ -1,23 +1,39 @@
-import { servicesData } from '@/app/data/servicesData';
-import { notFound } from 'next/navigation';
 import styles from "./page.module.scss";
 import Image from "next/image";
 import FooterComponent from '@/app/components/FooterComponent/FooterComponent';
 import NavigationRender from '@/app/components/NavigationRender/NavigationRender';
+import { getTranslations } from 'next-intl/server';
+import { notFound } from 'next/navigation';
 
 export default async function Page({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;
+    const t = await getTranslations('FullServiceInfo');
 
-    const service = servicesData[id];
-    if (!service) notFound();
+    let service: {
+        title: string;
+        text: string[];
+        list: string[];
+    };
+
+    try {
+        service = {
+            title: t(`${id}.title`),
+            text: t.raw(`${id}.text`) as string[],
+            list: t.raw(`${id}.list`) as string[],
+        };
+    } catch (e) {
+        console.log(e);
+        notFound();
+    }
 
     return (
         <>
             <NavigationRender />
             <section className={styles.container}>
                 <div className={styles.header}>
-                    <h1>სერვისები</h1>
+                    <h1>{t("title")}</h1>
                 </div>
+
                 <div className={styles.content}>
                     <div className={styles.body}>
                         <h2>{service.title}</h2>
@@ -28,9 +44,9 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
                         </div>
                     </div>
 
-                    {service.list && (
+                    {service.list.length > 0 && (
                         <div className={styles.listContainer}>
-                            <h3>ჩვენს მომსახურებაში შედის:</h3>
+                            <h3>{t("secondaty")}</h3>
                             <ul className={styles.listItemUl}>
                                 {service.list.map((item, index) => (
                                     <div key={index} className={styles.listItem}>
@@ -42,6 +58,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
                         </div>
                     )}
                 </div>
+
                 <div className={styles.calculatorImage}>
                     <Image
                         src="/serviceCalculator.png"
