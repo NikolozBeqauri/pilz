@@ -46,5 +46,18 @@
     "gmailError": "Please enter your email",
     "subjectError": "Please enter a subject",
     "messageError": "Please enter a message"
+  },
+  "Footer": {
+    "logo": "pilz",
+    "paragraph": "A professional team with many years of experience will provide you with accounting services in full compliance with international standards.",
+    "navigationTitle": "Navigation",
+    "services": "Services",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "contactUsTitle": "Contact Us",
+    "gmail": "info@pilz.com",
+    "number": "+995 577 77 77 77",
+    "location": "Tbilisi, Georgia",
+    "copyRight": "Copyright © 2025 Pilz"
   }
 }
