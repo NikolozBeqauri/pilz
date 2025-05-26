@@ -21,7 +21,7 @@ const GmailForm = () => {
 
     const t = useTranslations('Form');
 
-
+    if (!t) return null;
     const onSubmit = (data: FormValues) => {
         emailjs.send(
             'service_497ijx9',

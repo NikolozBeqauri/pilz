@@ -1,14 +1,19 @@
 import BurgerNav from "../BurgerNav/BurgerNav"
 import Navigation from "../Navigation/Navigation"
 import styles from "./NavigationRender.module.scss"
-const NavigationRender = () => {
+
+interface Props {
+    notIndexPage?: boolean;
+}
+
+const NavigationRender = (props: Props) => {
   return (
     <div>
       <div className={styles.navigation}>
-        <Navigation/>
+        <Navigation notIndexPage={props.notIndexPage}/>
       </div>
       <div className={styles.burgerNav}>
-        <BurgerNav/>
+        <BurgerNav notIndexPage={props.notIndexPage}/>
       </div>
     </div>
   )

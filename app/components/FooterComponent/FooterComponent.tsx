@@ -2,10 +2,11 @@ import styles from './FooterComponent.module.scss';
 import Image from 'next/image';
 import SocialLinks from './SocialLinks/SocialLinks';
 import { useTranslations } from 'next-intl';
+interface Props {
+    notIndexPage?: boolean;
+}const FooterComponent = (props: Props) => {
+    const t = useTranslations('Footer');
 
-const FooterComponent = () => {
-        const t = useTranslations('Footer');
-    
     return (
         <footer className={styles.background}>
             <div className={styles.footerWrapper}>
@@ -26,9 +27,15 @@ const FooterComponent = () => {
                         <nav className={styles.innerNavigation}>
                             <h4 className={styles.footerTitle}>{t("navigationTitle")}</h4>
                             <ul>
-                                <li><a href="#services" className={styles.footerSecondaryText}>{t("services")}</a></li>
-                                <li><a href="#aboutUs" className={styles.footerSecondaryText}>{t("aboutUs")}</a></li>
-                                <li><a href="#contact" className={styles.footerSecondaryText}>{t("contact")}</a></li>
+                                <li>
+                                    <a className={styles.footerSecondaryText} href={props.notIndexPage ? "/#services" : "#services"}>{t('services')}</a>
+                                </li>
+                                <li>
+                                    <a className={styles.footerSecondaryText} href={props.notIndexPage ? "/#aboutUs" : "#aboutUs"}>{t('aboutUs')}</a>
+                                </li>
+                                <li>
+                                    <a className={styles.footerSecondaryText} href={props.notIndexPage ? "/#contact" : "#contact"}>{t('contact')}</a>
+                                </li>
                             </ul>
                         </nav>
 

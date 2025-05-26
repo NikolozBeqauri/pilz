@@ -28,7 +28,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
 
     return (
         <>
-            <NavigationRender />
+            <NavigationRender notIndexPage />
             <section className={styles.container}>
                 <div className={styles.header}>
                     <h1>{t("title")}</h1>
@@ -68,7 +68,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
                     />
                 </div>
             </section>
-            <FooterComponent />
+            <FooterComponent notIndexPage/>
         </>
     );
 }
