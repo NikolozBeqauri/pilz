@@ -1,11 +1,12 @@
 import { useTranslations } from "next-intl";
 import styles from "./Navigation.module.scss"
 import LanguagePicker from "../LanguagePicker/LanguagePicker";
-
-const Navigation = () => {
+interface Props {
+    notIndexPage?: boolean;
+}
+const Navigation = (props:Props) => {
 
     const t = useTranslations('Navigation');
-
     return (
         <section className={styles.container}>
             <div className={styles.content}>
@@ -13,13 +14,13 @@ const Navigation = () => {
                 <nav>
                     <ul>
                         <li>
-                            <a href="#services">{t('services')}</a>
+                            <a href={props.notIndexPage ? "/#services" : "#services"}>{t('services')}</a>
                         </li>
                         <li>
-                            <a href="#aboutUs">{t('aboutUs')}</a>
+                            <a href={props.notIndexPage ? "/#aboutUs" : "#aboutUs"}>{t('aboutUs')}</a>
                         </li>
                         <li>
-                            <a href="#contact">{t('contact')}</a>
+                            <a href={props.notIndexPage ? "/#contact" : "#contact"}>{t('contact')}</a>
                         </li>
                     </ul>
                     <LanguagePicker />

@@ -4,8 +4,10 @@ import styles from './BurgerNav.module.scss';
 import { useState } from 'react';
 import LanguagePicker from '../LanguagePicker/LanguagePicker';
 import { useTranslations } from "next-intl";
-
-const BurgerNav = () => {
+interface Props {
+    notIndexPage?: boolean;
+}
+const BurgerNav = (props: Props) => {
     const [active, setActive] = useState(false)
     const t = useTranslations('Navigation');
 
@@ -27,13 +29,13 @@ const BurgerNav = () => {
                     <div>
                         <ul>
                             <li>
-                                <a onClick={() => setActive(!active)} className={styles.aTag} href="#services">{t('services')} </a>
+                                <a onClick={() => setActive(!active)} className={styles.aTag} href={props.notIndexPage ? "/#services" : "#services"}>{t('services')} </a>
                             </li>
                             <li>
-                                <a onClick={() => setActive(!active)} className={styles.aTag} href="#aboutUs">{t('aboutUs')}</a>
+                                <a onClick={() => setActive(!active)} className={styles.aTag} href={props.notIndexPage ? "/#aboutUs" : "#aboutUs"}>{t('aboutUs')}</a>
                             </li>
                             <li>
-                                <a onClick={() => setActive(!active)} className={styles.aTag} href="#contact">{t('contact')}</a>
+                                <a onClick={() => setActive(!active)} className={styles.aTag} href={props.notIndexPage ? "/#contact" : "#contact"}>{t('contact')}</a>
                             </li>
                         </ul>
                         <div className={styles.languagePicker}>
