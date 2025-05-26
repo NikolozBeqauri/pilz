@@ -30,27 +30,34 @@ const ContactSection = () => {
                             <div className={styles.links}>
                                 <h3>{t('socialTitle')}</h3>
                                 <div className={styles.icons}>
-                                    <Image
-                                        src={'/BOG.svg'}
-                                        alt={'image'}
-                                        width={40}
-                                        height={40}
+                                    <a
+                                        href={"https://www.instagram.com/accounting_taxservices_pilts?igsh=MXFwNjU5NGJheHlnZw=="}
+                                        aria-label={"Insagram"}
+                                        target="_blank"
+                                        title={`Visit our Insagram page`}
+                                    >
+                                        <Image
+                                        src={'/instagram.svg'}
+                                        alt={'instagram icon'}
+                                        width={24}
+                                        height={24}
                                         className={styles.icon}
                                     />
-                                    <Image
-                                        src={'/BOG.svg'}
-                                        alt={'image'}
-                                        width={40}
-                                        height={40}
-                                        className={styles.icon}
-                                    />
-                                    <Image
-                                        src={'/BOG.svg'}
-                                        alt={'image'}
-                                        width={40}
-                                        height={40}
-                                        className={styles.icon}
-                                    />
+                                    </a>
+                                    <a
+                                        href={"https://www.facebook.com/share/19GqRdEQ4T/?mibextid=qi2Omg"}
+                                        aria-label={"FaceBook"}
+                                        target="_blank"
+                                        title={`Visit our FaceBook page`}
+                                    >
+                                        <Image
+                                            src={'/facebook.svg'}
+                                            alt={'facebook icon'}
+                                            width={14}
+                                            height={14}
+                                            className={styles.icon}
+                                        />
+                                    </a>
                                 </div>
                             </div>
                         </div>

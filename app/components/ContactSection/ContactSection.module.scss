@@ -101,7 +101,9 @@
     width: 280px;
     height: 650px;
 }
-
+.icons a {
+    z-index: 3;
+}
 @media (max-width: 1024px) {
     .container {
         gap: 16px;
