@@ -1,6 +1,8 @@
 import { useTranslations } from "next-intl";
 import styles from "./Navigation.module.scss"
 import LanguagePicker from "../LanguagePicker/LanguagePicker";
+import Image
+ from "next/image";
 interface Props {
     notIndexPage?: boolean;
 }
@@ -10,7 +12,12 @@ const Navigation = (props:Props) => {
     return (
         <section className={styles.container}>
             <div className={styles.content}>
-                <h2>LOGO</h2>
+                <Image
+                    src={`/${t('logo')}.svg`}
+                    alt="logo"
+                    width={120}
+                    height={32.63}
+                />
                 <nav>
                     <ul>
                         <li>

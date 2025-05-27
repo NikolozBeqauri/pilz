@@ -13,11 +13,12 @@ interface Props {
                 <div className={styles.footerFirstSection}>
                     <div className={styles.socialMedias}>
                         <Image
-                            src="/logo.svg"
+                            src={`/${t('logo')}.svg`}
                             alt="logo"
-                            width={118}
-                            height={38}
+                            width={120}
+                            height={88}
                             className={styles.image}
+
                         />
                         <p>{t("paragraph")}</p>
                         <SocialLinks />

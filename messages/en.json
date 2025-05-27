@@ -1,5 +1,6 @@
 {
   "Navigation": {
+    "logo": "pilzEng",
     "services": "Services",
     "aboutUs": "About Us",
     "contact": "Contact"
@@ -31,9 +32,9 @@
     "contactUs": "Get in touch with us",
     "contactUsText": "Your feedback is very important to us",
     "socialTitle": "Follow us on social media",
-    "gmail": "info@pilz.com",
+    "gmail": "obgaidzegiorgi@yahoo.com",
     "location": "Tbilisi, Georgia",
-    "exactLocation": "26a Shalva Nutsubidze Street",
+    "exactLocation": "191 Davit Aghmashenebeli Ave",
     "number": "+995 577 77 77 77"
   },
   "Form": {
@@ -48,14 +49,14 @@
     "messageError": "Please enter a message"
   },
   "Footer": {
-    "logo": "pilz",
+    "logo": "pilzEngLight",
     "paragraph": "A professional team with many years of experience will provide you with accounting services in full compliance with international standards.",
     "navigationTitle": "Navigation",
     "services": "Services",
     "aboutUs": "About Us",
     "contact": "Contact",
     "contactUsTitle": "Contact Us",
-    "gmail": "info@pilz.com",
+    "gmail": "obgaidzegiorgi@yahoo.com",
     "number": "+995 577 77 77 77",
     "location": "Tbilisi, Georgia",
     "copyRight": "Copyright © 2025 Pilz"

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 547.06 148.76">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 1.66em;
+      }
+
+      .cls-2 {
+        letter-spacing: 1.67em;
+      }
+
+      .cls-3 {
+        font-family: TBCContractica-Book, 'TBC Contractica';
+        font-size: 11.21px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #02182f;
+      }
+
+      .cls-5 {
+        letter-spacing: 1.67em;
+      }
+
+      .cls-6 {
+        font-family: TBCContracticaCAPS-Regular, 'TBC Contractica CAPS';
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        font-size: 105.38px;
+      }
+
+      .cls-7 {
+        font-family: TBCContractica-Bold, 'TBC Contractica';
+        font-weight: 700;
+      }
+
+      .cls-8 {
+        letter-spacing: 1.65em;
+      }
+
+      .cls-9 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0" y1="74.38" x2="108.63" y2="74.38" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#02182f"/>
+      <stop offset="1" stop-color="#85c4e5"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path class="cls-9" d="M43.52,21.76c0,12.02-9.74,21.76-21.76,21.76S0,33.78,0,21.76,9.74,0,21.76,0s21.76,9.74,21.76,21.76ZM22.98,103.4c-12.53,0-22.68,10.15-22.68,22.68s10.15,22.68,22.68,22.68,22.68-10.15,22.68-22.68-10.15-22.68-22.68-22.68ZM108.62,51.7l-108.62.42v42.71l66.67-.42c23.17,0,41.97-18.78,41.97-41.97,0-.25,0-.5,0-.75ZM108.63,42.39C108.63,19.21,89.84.42,66.67.42l-17.18-.42v42.71l59.14.42c0-.25,0-.5,0-.75Z"/>
+      <g>
+        <text class="cls-4" transform="translate(185.51 104.88)"><tspan class="cls-7" x="0" y="0">ᲞᲘᲚᲪ</tspan><tspan class="cls-6" x="336.15" y="0"> </tspan></text>
+        <text class="cls-3" transform="translate(188.99 122.73) scale(1.31 1)"><tspan class="cls-2" x="0" y="0">Ბ</tspan><tspan class="cls-5" x="25.65" y="0">Უ</tspan><tspan class="cls-1" x="51.51" y="0">Ღ</tspan><tspan class="cls-8" x="79.77" y="0">Ა</tspan><tspan class="cls-5" x="104.9" y="0">Ლ</tspan><tspan class="cls-1" x="136.67" y="0">Ტ</tspan><tspan class="cls-5" x="164.49" y="0">Ე</tspan><tspan class="cls-2" x="190.21" y="0">Რ</tspan><tspan class="cls-5" x="218.56" y="0">ᲘᲐ</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

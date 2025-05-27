@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 424.87 148.76">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .83em;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: Satoshi-Light, Satoshi;
+        font-size: 14.64px;
+        font-weight: 300;
+      }
+
+      .cls-4 {
+        letter-spacing: .86em;
+      }
+
+      .cls-5 {
+        font-family: Satoshi-Bold, Satoshi;
+        font-weight: 700;
+      }
+
+      .cls-6 {
+        font-family: Satoshi-Regular, Satoshi;
+        letter-spacing: 0em;
+      }
+
+      .cls-3, .cls-7 {
+        fill: #081f37;
+      }
+
+      .cls-7, .cls-8 {
+        font-size: 105.38px;
+      }
+
+      .cls-8 {
+        fill: #34ff50;
+      }
+
+      .cls-9 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0" y1="74.38" x2="108.63" y2="74.38" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#02182f"/>
+      <stop offset="1" stop-color="#85c4e5"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <g>
+          <text class="cls-8" transform="translate(179.13 107.12)"><tspan class="cls-5" x="0" y="0">PILZ</tspan><tspan class="cls-6" x="216.55" y="0"> </tspan></text>
+          <text class="cls-7" transform="translate(179.13 107.12)"><tspan class="cls-5" x="0" y="0">PILZ</tspan><tspan class="cls-6" x="216.55" y="0"> </tspan></text>
+        </g>
+        <g>
+          <text class="cls-2" transform="translate(187.38 128.39)"><tspan class="cls-1" x="0" y="0">A</tspan><tspan class="cls-4" x="21.4" y="0">CCOUNTING</tspan></text>
+          <text class="cls-3" transform="translate(187.38 128.39)"><tspan class="cls-1" x="0" y="0">A</tspan><tspan class="cls-4" x="21.4" y="0">CCOUNTING</tspan></text>
+        </g>
+      </g>
+      <path class="cls-9" d="M43.52,21.76c0,12.02-9.74,21.76-21.76,21.76S0,33.78,0,21.76,9.74,0,21.76,0s21.76,9.74,21.76,21.76ZM22.98,103.4c-12.53,0-22.68,10.15-22.68,22.68s10.15,22.68,22.68,22.68,22.68-10.15,22.68-22.68-10.15-22.68-22.68-22.68ZM108.62,51.7l-108.62.42v42.71l66.67-.42c23.17,0,41.97-18.78,41.97-41.97,0-.25,0-.5,0-.75ZM108.63,42.39C108.63,19.21,89.84.42,66.67.42l-17.18-.42v42.71l59.14.42c0-.25,0-.5,0-.75Z"/>
+    </g>
+  </g>
+</svg>

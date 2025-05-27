@@ -40,10 +40,14 @@ const Hero = () => {
                     />
                     <div className={styles.buttons}>
                         <div className={styles.joinUs}>
-                            <ReusableButton title={`${t('joinUs')}`} />
+                            <a href="#contact">
+                                <ReusableButton title={`${t('joinUs')}`} />
+                            </a>
                         </div>
                         <div className={styles.more}>
-                            <ReusableButton title={`${t('more')}`} buttonColor='grayButton' />
+                            <a href="#aboutUs">
+                                <ReusableButton title={`${t('more')}`} buttonColor='grayButton' />
+                            </a>
                         </div>
                     </div>
 
