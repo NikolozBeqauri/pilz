@@ -15,7 +15,12 @@ const BurgerNav = (props: Props) => {
         <div className={`${styles.background} ${active ? styles.backgroundActive : ''}`} onClick={() => setActive(!active)}>
             <nav className={styles.wrapper} onClick={(e) => e.stopPropagation()} >
                 <div className={styles.header}>
-                    <span>LOGO</span>
+                    <Image
+                        src={`/${t('logo')}.svg`}
+                        alt="logo"
+                        width={120}
+                        height={32.63}
+                    />
                     <Image
                         src="/burger.svg"
                         alt="burger nemu"

@@ -23,11 +23,13 @@ const GmailForm = () => {
 
     if (!t) return null;
     const onSubmit = (data: FormValues) => {
+        console.log(data);
+        
         emailjs.send(
-            'service_497ijx9',
-            'template_xd7auha',
+            'service_7n2tsgc',
+            'template_zq94fyq',
             data,
-            'AmdoW3hbTIJ5TaQKJ'
+            'bpijYHbSNe3_neBhu'
         )
             .then((result) => {
                 console.log('Email successfully sent!', result.text);
@@ -38,7 +40,7 @@ const GmailForm = () => {
             });
     };
 
-    return (
+    return ( 
         <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
             <div className={styles.inputs}>
                 <div>

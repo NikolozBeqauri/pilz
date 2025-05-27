@@ -1,4 +1,4 @@
-import {Link} from '@/i18n/navigation';
+import { Link } from '@/i18n/navigation';
 import styles from './Services.module.scss';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
@@ -60,12 +60,14 @@ const Services = () => {
             <li key={service.id}>
               <Link href={`/service/${service.id}`}>
                 <article>
-                  <Image
-                    src={service.image}
-                    alt={service.altText}
-                    width={456}
-                    height={487}
-                  />
+                  <div className={styles.imageWrapper}>
+                    <Image
+                      src={service.image}
+                      alt={service.altText}
+                      fill
+                      style={{ objectFit: 'cover' }}
+                    />
+                  </div>
                   <h3>{service.title}</h3>
                   <p>{service.description}</p>
                 </article>
