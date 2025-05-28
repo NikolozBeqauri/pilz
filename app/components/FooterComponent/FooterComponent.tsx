@@ -2,6 +2,7 @@ import styles from './FooterComponent.module.scss';
 import Image from 'next/image';
 import SocialLinks from './SocialLinks/SocialLinks';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 interface Props {
     notIndexPage?: boolean;
 }const FooterComponent = (props: Props) => {
@@ -12,14 +13,16 @@ interface Props {
             <div className={styles.footerWrapper}>
                 <div className={styles.footerFirstSection}>
                     <div className={styles.socialMedias}>
-                        <Image
-                            src={`/${t('logo')}.svg`}
-                            alt="logo"
-                            width={120}
-                            height={88}
-                            className={styles.image}
-
-                        />
+                        <div className={styles.logo}>
+                            <Link href="/">
+                                <Image
+                                    src={`/${t('logo')}.svg`}
+                                    alt="logo"
+                                    width={120}
+                                    height={42}
+                                />
+                            </Link>
+                        </div>
                         <p>{t("paragraph")}</p>
                         <SocialLinks />
                     </div>
