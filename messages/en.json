@@ -46,7 +46,8 @@
     "nameError": "Please enter your first or last name",
     "gmailError": "Please enter your email",
     "subjectError": "Please enter a subject",
-    "messageError": "Please enter a message"
+    "messageError": "Please enter a message",
+    "sentSuccessfully": "Your message has been sent successfully!"
   },
   "Footer": {
     "logo": "pilzEngLight",
