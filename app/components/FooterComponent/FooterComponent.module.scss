@@ -111,6 +111,21 @@
     display: flex;
     gap: 100px;
 }
+
+.logo {
+  width: 120px;
+  height: 42px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 @media (max-width: 1024px) {
     .footerFirstSection {
         display: grid;
