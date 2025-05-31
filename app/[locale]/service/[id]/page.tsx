@@ -61,14 +61,14 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
 
                 <div className={styles.calculatorImage}>
                     <Image
-                        src="/serviceCalculator.png"
+                        src={`/service${id}.jpg`}
                         alt="calculator"
                         width={1440}
                         height={624}
                     />
                 </div>
             </section>
-            <FooterComponent notIndexPage/>
+            <FooterComponent notIndexPage />
         </>
     );
 }
