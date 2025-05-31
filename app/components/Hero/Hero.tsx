@@ -45,7 +45,7 @@ const Hero = () => {
                             </a>
                         </div>
                         <div className={styles.more}>
-                            <a href="#aboutUs">
+                            <a href="#8aboutUs">
                                 <ReusableButton title={`${t('more')}`} buttonColor='grayButton' />
                             </a>
                         </div>
