@@ -5,9 +5,6 @@ const SocialLinks = () => {
   const socialMedia = [
     { name: "Facebook", url: "https://www.facebook.com/share/19GqRdEQ4T/?mibextid=qi2Omg", img: "/facebook.svg", width: 12, height: 19 },
     { name: "Instagram", url: "https://www.instagram.com/accounting_taxservices_pilts?igsh=MXFwNjU5NGJheHlnZw==", img: "/instagram.svg", width: 18, height: 18 },
-    { name: "Twitter", url: "https://twitter.com", img: "/twitter.svg", width: 18, height: 14 },
-    { name: "LinkedIn", url: "https://linkedin.com", img: "/linkedin.svg", width: 18, height: 18 },
-    { name: "YouTube", url: "https://youtube.com", img: "/youtube.svg", width: 20, height: 14 },
   ];
 
   return (
