@@ -26,7 +26,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   return {
     title: titles[locale] || titles.ka,
-    description: descriptions[locale] || descriptions.ka
+    description: descriptions[locale] || descriptions.ka,
+     icons: {
+      icon: '/tabLogo.svg',
+    },
   };
 }
 
