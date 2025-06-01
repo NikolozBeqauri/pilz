@@ -7,22 +7,20 @@ interface Props {
     notIndexPage?: boolean;
 }const FooterComponent = (props: Props) => {
     const t = useTranslations('Footer');
+    const translation = useTranslations('Navigation');
 
     return (
         <footer className={styles.background}>
             <div className={styles.footerWrapper}>
                 <div className={styles.footerFirstSection}>
                     <div className={styles.socialMedias}>
-                        <div className={styles.logo}>
-                            <Link href="/">
-                                <Image
-                                    src={`/${t('logo')}.svg`}
-                                    alt="logo"
-                                    width={120}
-                                    height={42}
-                                />
-                            </Link>
-                        </div>
+                        <Link href="/">
+                            <img
+                                src={`/${t('logo')}.svg`}
+                                alt="logo"
+                                className={styles[translation("logo")]}
+                            />
+                        </Link>
                         <p>{t("paragraph")}</p>
                         <SocialLinks />
                     </div>

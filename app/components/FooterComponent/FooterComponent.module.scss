@@ -112,19 +112,13 @@
     gap: 100px;
 }
 
-.logo {
-  width: 120px;
-  height: 42px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.pilzEng {
+  width: 100px;
+  height: 40px;
 }
-
-.logo > img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.pilzGeo {
+  width: 120px;
+  height: 40px;
 }
 @media (max-width: 1024px) {
     .footerFirstSection {
