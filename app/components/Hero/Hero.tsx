@@ -45,7 +45,7 @@ const Hero = () => {
                             </a>
                         </div>
                         <div className={styles.more}>
-                            <a href="#8aboutUs">
+                            <a href="#aboutUs">
                                 <ReusableButton title={`${t('more')}`} buttonColor='grayButton' />
                             </a>
                         </div>
@@ -53,7 +53,7 @@ const Hero = () => {
 
                 </div>
                 <Image
-                    src="/heroDesktop.png"
+                    src="/heroDesktop.svg"
                     alt="hero image"
                     className={styles.heroImage}
                     width={630}
