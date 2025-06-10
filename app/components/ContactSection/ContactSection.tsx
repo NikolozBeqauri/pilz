@@ -37,7 +37,7 @@ const ContactSection = () => {
                                         title={`Visit our Insagram page`}
                                     >
                                         <Image
-                                        src={'/instagram.svg'}
+                                        src={'/instagram-1.svg'}
                                         alt={'instagram icon'}
                                         width={24}
                                         height={24}

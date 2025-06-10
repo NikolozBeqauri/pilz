@@ -32,7 +32,7 @@ const Hero = () => {
                         {t('bodyText')}
                     </p>
                     <Image
-                        src="/heroMobile.png"
+                        src="/heroMobile-1.png"
                         alt="hero image"
                         className={styles.heroMobile}
                         width={343}
@@ -53,14 +53,14 @@ const Hero = () => {
 
                 </div>
                 <Image
-                    src="/heroDesktop.svg"
+                    src="/heroDesktop-1.png"
                     alt="hero image"
                     className={styles.heroImage}
                     width={630}
                     height={488}
                 />
                 <Image
-                    src="/heroLaptop.png"
+                    src="/heroLaptop-1.png"
                     alt="hero image"
                     className={styles.heroLaptop}
                     width={336}

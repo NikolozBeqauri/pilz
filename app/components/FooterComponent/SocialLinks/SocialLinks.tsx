@@ -4,7 +4,7 @@ import Image from 'next/image';
 const SocialLinks = () => {
   const socialMedia = [
     { name: "Facebook", url: "https://www.facebook.com/share/19GqRdEQ4T/?mibextid=qi2Omg", img: "/facebook.svg", width: 12, height: 19 },
-    { name: "Instagram", url: "https://www.instagram.com/accounting_taxservices_pilts?igsh=MXFwNjU5NGJheHlnZw==", img: "/instagram.svg", width: 18, height: 18 },
+    { name: "Instagram", url: "https://www.instagram.com/accounting_taxservices_pilts?igsh=MXFwNjU5NGJheHlnZw==", img: "/instagram-1.svg", width: 18, height: 18 },
   ];
 
   return (
