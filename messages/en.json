@@ -82,6 +82,10 @@
     "service6": {
       "title": "Consultation",
       "description": "Our qualified and professional team of consultants will explain tax and accounting matters in a simple and understandable way."
+    },
+    "service7": {
+      "title": "Customs Services",
+      "description": "We will ensure that your goods meet all the requirements of a customs declaration during the import or export process"
     }
   },
   "FullServiceInfo": {
@@ -160,6 +164,20 @@
         "Organization of business processes",
         "Updates on changes in legislation",
         "Recommendations"
+      ]
+    },
+      "7": {
+      "title": "Customs Services",
+      "text": [
+        "We will ensure that your goods meet all the requirements of a customs declaration during the import or export process. We handle the complex process of clearing goods from customs by managing documentation, calculating duties and taxes, and ensuring compliance with government regulations.",
+        "With our services, you will avoid costly mistakes."
+      ],
+      "list": [
+          "Classification of goods: the correct HS code for your goods;",
+          "Consultation on trade agreements: advice on how you can benefit from free trade agreements;",
+          "Preparation of documentation: preparation of all necessary documentation, including customs declarations, import/export licenses and other necessary forms;",
+          "Calculation of duties: payment of necessary and appropriate duties based on the value and classification of your goods;",
+          "Customs Clearance: Oversee the clearance of goods to ensure all compliance issues are addressed to avoid penalties or delays."
       ]
     }
   }
