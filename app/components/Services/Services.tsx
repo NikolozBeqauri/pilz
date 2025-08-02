@@ -48,6 +48,12 @@ const Services = () => {
       description: t('service6.description'),
       image: '/service6.jpg',
       altText: t('service6.title'),
+    },{
+      id: 7,
+      title: t('service7.title'),
+      description: t('service7.description'),
+      image: '/service7.jpeg',
+      altText: t('service7.title'),
     },
   ];
 

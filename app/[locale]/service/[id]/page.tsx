@@ -61,8 +61,8 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
 
                 <div className={styles.calculatorImage}>
                     <Image
-                        src={`/service${id}.jpg`}
-                        alt="calculator"
+                        src={`/service${id}.${id === "7" ? 'jpeg' : 'jpg'}`}
+                        alt="service image"
                         width={1440}
                         height={624}
                     />

@@ -32,7 +32,7 @@ const Hero = () => {
                         {t('bodyText')}
                     </p>
                     <Image
-                        src="/heroMobile-1.png"
+                        src="/heroMobileImage.png"
                         alt="hero image"
                         className={styles.heroMobile}
                         width={343}
